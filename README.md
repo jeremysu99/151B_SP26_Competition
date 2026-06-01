@@ -1,15 +1,21 @@
-# CSE 151B Competition — Starter Code
+# CSE 151B Competition — Submission
 
-Open **`starter_code_cse151b_comp.ipynb`** to get started.
+## GPU Type
 
-The notebook covers environment setup, inference with Qwen3-4B-Thinking (INT8), and scoring against the public dataset.
+We used an NVIDIA L4 on GCP AI Workbench
 
-## Contents
+## Overall Runtime
 
-| File | Description |
-|---|---|
-| `starter_code_cse151b_comp.ipynb` | Main entry point |
-| `judger.py` | Response scoring logic |
-| `utils.py` | Utilities used by `judger.py` |
-| `data/public.jsonl` | Public dataset with ground-truth answers |
-| `results/` | Output JSONL files written at runtime |
+The inference time takes about ~13 hours
+
+## Requirements
+
+The required python dependencies are listed in requirements.txt. Python version: 3.12.13
+
+## Instructions
+
+Simply run
+```
+python run_inference.py
+```
+to reproduce results
